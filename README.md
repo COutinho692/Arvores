@@ -1,5 +1,5 @@
-Relatório Técnico da Atividade (Pronto para Entrega)
-Aluno(a): [Seu Nome]
+Relatório.
+Aluno: Caio Henrique Alencar Coutinho dos Santos.
 
 Estrutura de Dados - Projeto Árvores 2026
 
