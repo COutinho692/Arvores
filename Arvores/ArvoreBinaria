@@ -118,7 +118,7 @@ public class ArvoreBinaria {
         }
     }
 
-    // Método privado que realiza a lógica de remoção nos 3 cenários
+    // Método privado que realiza a lógica de remoção
     private No removerRecursivo(No atual, Integer conteudo) {
         if (atual == null) {
             return null;
