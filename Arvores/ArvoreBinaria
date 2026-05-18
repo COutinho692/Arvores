@@ -151,7 +151,7 @@ public class ArvoreBinaria {
         return atual;
     }
 
-    // Método auxiliar para encontrar o menor elemento de uma subárvore
+    //Metodo auxiliar para encontrar o menor elemneto de uma subárvore
     private No encontrarMinimo(No no) {
         No atual = no;
         while (atual.getEsquerda() != null) {
