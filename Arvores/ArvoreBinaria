@@ -108,10 +108,10 @@ public class ArvoreBinaria {
         posOrdem(no.getDireita());
         System.out.println(no.getConteudo());
     }
-}
 
 
-// Método público para ser chamado na Main
+
+    // Método público para ser chamado na Main
     public void remover(Integer conteudo) {
         if (!estaVazia()) {
             this.raiz = removerRecursivo(this.raiz, conteudo);
@@ -126,10 +126,10 @@ public class ArvoreBinaria {
 
         if (conteudo < atual.getConteudo()) {
             atual.setEsquerda(removerRecursivo(atual.getEsquerda(), conteudo));
-        } 
+        }
         else if (conteudo > atual.getConteudo()) {
             atual.setDireita(removerRecursivo(atual.getDireita(), conteudo));
-        } 
+        }
 
         else {
             if (atual.getEsquerda() == null && atual.getDireita() == null) {
@@ -138,13 +138,13 @@ public class ArvoreBinaria {
 
             if (atual.getEsquerda() == null) {
                 return atual.getDireita();
-            } 
+            }
             else if (atual.getDireita() == null) {
                 return atual.getEsquerda();
             }
 
             No sucessor = encontrarMinimo(atual.getDireita());
-            
+
             atual.setConteudo(sucessor.getConteudo());
             atual.setDireita(removerRecursivo(atual.getDireita(), sucessor.getConteudo()));
         }
@@ -159,3 +159,4 @@ public class ArvoreBinaria {
         }
         return atual;
     }
+}
