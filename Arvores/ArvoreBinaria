@@ -111,14 +111,14 @@ public class ArvoreBinaria {
 
 
 
-    // Método público para ser chamado na Main
+    //Metodo publico para ser chamado na main
     public void remover(Integer conteudo) {
         if (!estaVazia()) {
             this.raiz = removerRecursivo(this.raiz, conteudo);
         }
     }
 
-    // Método privado que realiza a lógica de remoção
+    //Metodo privado que realiza a logica de remoção
     private No removerRecursivo(No atual, Integer conteudo) {
         if (atual == null) {
             return null;
